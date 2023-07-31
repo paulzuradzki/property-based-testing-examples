@@ -1,12 +1,14 @@
-from encoder import encode, decode
-import pytest
-from hypothesis import given
-from hypothesis.strategies import text
 from typing import List, Tuple
 
+import pytest
+from hypothesis import example, given
+from hypothesis import strategies as st
 
-@pytest.mark.skip
-@given(text())
+from encoder import decode, encode
+
+
+@given(s=st.text())
+@example(s="")
 def test_decode_inverts_encode_property(s: str) -> None:
     assert decode(encode(s)) == s
 

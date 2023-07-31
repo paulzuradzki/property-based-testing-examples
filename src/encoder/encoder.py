@@ -11,6 +11,10 @@ def encode(input_string: str) -> List[Tuple[str, int]]:
     Example
     >>> assert encode("yooooo") == [('y', 1), ('o', 5)]
     """
+
+    if not input_string:
+        return []
+
     count = 1
     prev = ""
     lst = []
