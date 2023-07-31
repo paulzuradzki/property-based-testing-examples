@@ -30,7 +30,7 @@ def encode(input_string: str) -> List[Tuple[str, int]]:
 
 def decode(lst: List[Tuple[str, int]]) -> str:
     """Decode a run-length encoded collection into a string.
-    
+
     Example
     >>> assert decode([('y', 1), ('o', 5)]) == "yooooo"
     """

@@ -1,13 +1,13 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: main
+    rev: v4.4.0
     hooks:
     - id: check-yaml
     - id: end-of-file-fixer
     - id: trailing-whitespace
 
   - repo: https://github.com/psf/black
-    rev: main
+    rev: 23.7.0
     hooks:
     - id: black
 
@@ -17,11 +17,11 @@ repos:
 #     - id: pyroma
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: main
+    rev: v0.0.280
     hooks:
     - id: ruff
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev:  main
+    rev:  v1.4.1
     hooks:
     - id: mypy
