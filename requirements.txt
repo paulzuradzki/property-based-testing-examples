@@ -1,0 +1,12 @@
+hypothesis
+ipykernel
+ipython
+pandas
+pandera
+
+# dev tools
+black
+mypy
+pytest
+ruff
+--editable .
