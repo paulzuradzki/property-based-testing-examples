@@ -7,7 +7,8 @@ from typing import List, Tuple
 
 
 def encode(input_string: str) -> List[Tuple[str, int]]:
-    """Example
+    """Encode a string into a run-length encoded collection.
+    Example
     >>> assert encode("yooooo") == [('y', 1), ('o', 5)]
     """
     count = 1
@@ -28,8 +29,10 @@ def encode(input_string: str) -> List[Tuple[str, int]]:
 
 
 def decode(lst: List[Tuple[str, int]]) -> str:
-    """Example
-    >>> decode([('y', 1), ('o', 5)]) == "yooooo"
+    """Decode a run-length encoded collection into a string.
+    
+    Example
+    >>> assert decode([('y', 1), ('o', 5)]) == "yooooo"
     """
     q = ""
     for character, count in lst:
