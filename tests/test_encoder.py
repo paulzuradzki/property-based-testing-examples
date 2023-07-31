@@ -3,6 +3,7 @@ import pytest
 from hypothesis import given
 from hypothesis.strategies import text
 
+
 @pytest.mark.skip
 @given(text())
 def test_decode_inverts_encode_property(s):
