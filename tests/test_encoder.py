@@ -29,6 +29,10 @@ def test_decode_inverts_encode_example() -> None:
     ("input_plain_string", "expected_encoded"),
     [
         ("yooooo", [("y", 1), ("o", 5)]),
+        ("hello", [("h", 1), ("e", 1), ("l", 2), ("o", 1)]),
+        ("foo", [("f", 1), ("o", 2)]),
+        ("bbbaar", [("b", 3), ("a", 2), ("r", 1)]),
+        ("yyooww", [("y", 2), ("o", 2), ("w", 2)]),
     ],
 )
 def test_encode_parameterized(
