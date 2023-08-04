@@ -7,4 +7,3 @@ src = ["src"]
 
 [tool.mypy]
 mypy_path = ["src"]
-ignore_missing_imports = "True"

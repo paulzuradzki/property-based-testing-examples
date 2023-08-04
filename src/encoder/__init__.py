@@ -1,1 +1,2 @@
-from encoder.encoder import *  # noqa
+# ruff: noqa
+from encoder.encoder import *

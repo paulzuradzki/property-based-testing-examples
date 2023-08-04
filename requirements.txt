@@ -3,9 +3,11 @@ ipykernel
 ipython
 pandas
 pandera
+pandera[io]
 
 # dev tools
 black
+black[jupyter]
 mypy
 pytest
 ruff
